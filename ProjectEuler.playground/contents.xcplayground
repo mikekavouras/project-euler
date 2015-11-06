@@ -4,5 +4,6 @@
         <page name='Multiples of 3 and 5'/>
         <page name='Even Fibonacci numbers'/>
         <page name='Largest prime factor'/>
+        <page name='Largest Palindrome Product'/>
     </pages>
 </playground>

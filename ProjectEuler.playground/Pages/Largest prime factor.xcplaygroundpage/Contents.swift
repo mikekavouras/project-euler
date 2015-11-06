@@ -1,4 +1,4 @@
-//: [Even Fibonacci numbers](@previous)
+//: [Largest prime factor](@previous)
 
 //: # Largest prime factor
 /*: https://projecteuler.net/problem=3
