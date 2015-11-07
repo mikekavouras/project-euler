@@ -35,7 +35,7 @@ extension Int {
     }
 }
 
-/* Attempt 1
+/* Attempt 1 (run time: 0.0055s)
 
 func findFirstPrime(num: Int) -> Int? {
     let max = ceil(sqrt(Float(num)))
@@ -68,13 +68,11 @@ func findLargestPrime(num: Int) -> Int {
     return primes.last!
 }
 
-print(NSDate())
 print(findLargestPrime(6008514751436348123))
-print(NSDate())
 
 */
 
-//: Attempt 2
+//: Attempt 2 (run time: 0.00425s)
 
 func findLargestPrime(num: Int) -> Int {
     guard !num.isPrime() else { return num }

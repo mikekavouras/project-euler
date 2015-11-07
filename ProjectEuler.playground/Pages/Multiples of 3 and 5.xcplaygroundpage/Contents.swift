@@ -20,11 +20,15 @@ func sumOfMultplesOf3Or5(max: Int) -> Int {
 
 print(sumOfMultplesOf3Or5(1000))
 
+//: run time: 0.00004s
+
 //: O(n)
 var nums = (0..<1000).map { $0 }
 var filtered = nums.filter { $0 % 3 == 0 || $0 % 5 == 0 }
 var sum = filtered.reduce(0, combine: +)
 
 print(sum)
+
+//: run time: 0.00122s
 
 //: [Even Fibonacci numbers](@next)

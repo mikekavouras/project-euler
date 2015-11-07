@@ -31,4 +31,6 @@ func smallestMultiple(range: Range<Int>) -> Int {
 // uncomment the line below to execute
 // smallestMultiple(1...20)
 
+//: run time: 35.59s
+
 //: [Next](@next)

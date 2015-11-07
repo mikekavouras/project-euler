@@ -56,6 +56,8 @@ func evenFibonacciUpTo(max: Int) -> Int {
 
 print(evenFibonacciUpTo(4_000_000))
 
+//: run time: 0.00117s
+
 func evenFibonacciUpToWithFilterReduce(max: Int) -> Int {
     var result = [1, 2]
     while result.last! < max {
@@ -65,5 +67,7 @@ func evenFibonacciUpToWithFilterReduce(max: Int) -> Int {
 }
 
 print(evenFibonacciUpToWithFilterReduce(4_000_000))
+
+///: run time: 0.000914s
 
 //: [Next](@next)
