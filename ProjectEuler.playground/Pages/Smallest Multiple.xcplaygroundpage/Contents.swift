@@ -28,6 +28,7 @@ func smallestMultiple(range: Range<Int>) -> Int {
     }
 }
 
-//smallestMultiple(1...20)
+// uncomment the line below to execute
+// smallestMultiple(1...20)
 
 //: [Next](@next)

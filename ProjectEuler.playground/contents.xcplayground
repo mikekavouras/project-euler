@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw'>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
         <page name='Multiples of 3 and 5'/>
         <page name='Even Fibonacci numbers'/>
         <page name='Largest prime factor'/>
         <page name='Largest Palindrome Product'/>
         <page name='Smallest Multiple'/>
+        <page name='10001st prime'/>
     </pages>
 </playground>

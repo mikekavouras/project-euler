@@ -12,15 +12,17 @@ import Foundation
 
 extension Int {
     func isPrime() -> Bool {
-        let max = Int(ceil(sqrt(Float(self))))
+        guard self != 1 || self != 2 else { return true }
+        let max = ceil(sqrt(Float(self)))
         guard max > 1 else { return true }
-        for var i = 2; i < max; i++ { // slowest part
+        for var i = 2; i <= Int(max); i++ { // slowest part
             if self % i == 0 {
                 return false
             }
         }
         return true
     }
+
     
     func smallestPrimeFactor() -> Int? {
         let max = ceil(sqrt(Float(self)))
@@ -79,8 +81,6 @@ func findLargestPrime(num: Int) -> Int {
     return findLargestPrime(num / num.smallestPrimeFactor()!)
 }
 
-print(NSDate())
 print(findLargestPrime(600851475143))
-print(NSDate())
 
 //: [Next](@next)

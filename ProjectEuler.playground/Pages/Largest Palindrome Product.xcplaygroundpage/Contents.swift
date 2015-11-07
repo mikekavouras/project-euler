@@ -81,6 +81,7 @@ func largestPalindromWithXNumberOfDigits(numberOfDigits: Int) -> Int {
     return results.sort { $0 > $1 }.first!
 }
 
-//print(largestPalindromWithXNumberOfDigits(3))
+// uncomment the line below to execute
+// largestPalindromWithXNumberOfDigits(3)
 
 //: [Next](@next)
