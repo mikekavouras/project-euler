@@ -6,6 +6,7 @@
         <page name='Largest prime factor'/>
         <page name='Largest Palindrome Product'/>
         <page name='Smallest Multiple'/>
+        <page name='Sum square difference'/>
         <page name='10001st prime'/>
     </pages>
 </playground>
