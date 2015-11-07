@@ -8,5 +8,6 @@
         <page name='Smallest Multiple'/>
         <page name='Sum square difference'/>
         <page name='10001st prime'/>
+        <page name='Largest product in a series'/>
     </pages>
 </playground>
