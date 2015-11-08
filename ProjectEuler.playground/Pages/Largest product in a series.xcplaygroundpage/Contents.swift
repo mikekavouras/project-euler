@@ -67,12 +67,12 @@ extension String {
         return a
     }
 }
-
-if let b = t.grouped(13) {
-    let c = b.map{ Int($0)!.splitDigits().reduce(1, combine: *) }
-    print(c.sort { $0 > $1 }.first!)
-}
+//
+//if let b = t.grouped(13) {
+//    let c = b.map{ Int($0)!.splitDigits().reduce(1, combine: *) }
+//    print(c.sort { $0 > $1 }.first!)
+//}
 
 //: run time: 0.10s
-
+UInt64.max
 //: [Next](@next)
