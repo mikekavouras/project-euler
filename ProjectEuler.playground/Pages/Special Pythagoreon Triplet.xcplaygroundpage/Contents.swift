@@ -15,27 +15,36 @@ For example: 3^2 + 4^2 = 9 + 16 = 25 = 5^2
 
 import Foundation
 
-func findTheThing(a: Int, b: Int) -> Float? {
-    for var a = 0;a < 1000;a++ {
-        var b = 0
-        while sqrt(pow(Double(a), 2.0) + pow(Double(b), 2.0)) + pow(Double(a), 2.0) + pow(Double(b), 2.0) <= 1000 {
-            let c = sqrt(pow(Double(a), 2.0) + pow(Double(b), 2.0))
-            if a + b + c == 1000 {
-                return a * b * c
-            }
-            b++
+
+func pythagoreonTriplet() -> (Int, Int, Int) {
+    
+    var sum = 0
+    var m = 1
+    
+    var a = 0
+    var b = 0
+    var c = 0
+    
+    while sum != 1000 {
+        
+        m++
+        
+        for n in 1...m-1{
+            guard sum != 1000 else { break }
+            
+            a = (m * m) + (n * n)
+            b = 2 * m * n
+            c = (m * m) - (n * n)
+            
+            sum = a + b + c
         }
     }
-    return nil
+    
+    return (a, b, c)
 }
 
-let a = 3.0
-let b = 4.0
-let p = 2.0
-
-// a + b + sqrt(pow(a, 2) + pow(b, 2)) = 1000
-
-
+let t = pythagoreonTriplet()
+print(t.0 * t.1 * t.2)
 
 
 //: [Next](@next)

@@ -20,21 +20,17 @@ Hence the difference between the sum of the squares of the first ten natural num
 import Foundation
 
 func sumOfSquares(range: Range<Int>) -> Int {
-    var sum: Float = 0
-    for i in range {
-        sum += pow(Float(i), 2.0)
-    }
+    let sum = range.map{ pow(Float($0), 2) }.reduce(0, combine: +)
     return Int(sum)
 }
 
 func squareOfSum(range: Range<Int>) -> Int {
-    var sum = 0
-    for i in range {
-        sum += i
-    }
+    let sum = range.map{$0}.reduce(0, combine: +)
     return Int(pow(Float(sum), 2.0))
 }
 
 squareOfSum(1...100) - sumOfSquares(1...100)
+
+//: **run time:** 0.0009s
 
 //: [Next](@next)

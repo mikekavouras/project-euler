@@ -35,44 +35,6 @@ extension Int {
     }
 }
 
-/* Attempt 1 (run time: 0.0055s)
-
-func findFirstPrime(num: Int) -> Int? {
-    let max = ceil(sqrt(Float(num)))
-    for i in 2..<Int(max) {
-        if num % i == 0 {
-            return i
-        }
-    }
-    return nil
-}
-
-func findLargestPrime(num: Int) -> Int {
-    guard !num.isPrime() else { return num }
-
-    var primes = [Int]()
-    let n = findFirstPrime(num)
-    primes.append(n!)
-
-    while true {
-        let d = primes.reduce(1, combine: *)
-        let next = num / d
-        if next.isPrime() {
-            primes.append(next)
-            break
-        }
-        let n = findFirstPrime(num / d)
-        primes.append(n!)
-    }
-    
-    return primes.last!
-}
-
-print(findLargestPrime(6008514751436348123))
-
-*/
-
-//: Attempt 2 (run time: 0.00425s)
 
 func findLargestPrime(num: Int) -> Int {
     guard !num.isPrime() else { return num }
@@ -80,5 +42,7 @@ func findLargestPrime(num: Int) -> Int {
 }
 
 print(findLargestPrime(600851475143))
+
+//: **run time:** 0.00425s
 
 //: [Next](@next)
