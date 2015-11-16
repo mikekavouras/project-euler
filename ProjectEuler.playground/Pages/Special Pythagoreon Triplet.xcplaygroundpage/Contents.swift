@@ -16,34 +16,31 @@ For example: 3^2 + 4^2 = 9 + 16 = 25 = 5^2
 import Foundation
 
 
-func pythagoreonTriplet() -> (Int, Int, Int) {
+func pythagoreonTriplet(sum: Int) -> (Int, Int, Int) {
     
-    var sum = 0
+    var s = 0
+    var a = 0, b = 0, c = 0
     var m = 1
     
-    var a = 0
-    var b = 0
-    var c = 0
-    
-    while sum != 1000 {
+    while s != sum {
         
         m++
         
         for n in 1...m-1{
-            guard sum != 1000 else { break }
+            guard s != 1000 else { break }
             
             a = (m * m) + (n * n)
             b = 2 * m * n
             c = (m * m) - (n * n)
             
-            sum = a + b + c
+            s = a + b + c
         }
     }
     
     return (a, b, c)
 }
 
-let t = pythagoreonTriplet()
+let t = pythagoreonTriplet(1000)
 print(t.0 * t.1 * t.2)
 
 
