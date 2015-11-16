@@ -26,7 +26,7 @@ func pythagoreonTriplet(sum: Int) -> (Int, Int, Int) {
         
         m++
         
-        for n in 1...m-1{
+        for n in 1...(m - 1) {
             guard s != 1000 else { break }
             
             a = (m * m) + (n * n)
